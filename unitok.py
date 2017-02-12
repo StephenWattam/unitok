@@ -84,7 +84,7 @@ def import_config(config_path):
     return import_module(name)
 
 
-if __name__ == "__main__":
+def main():
     import argparse 
     import sys
 
@@ -118,4 +118,8 @@ if __name__ == "__main__":
     for line in input_data:
         tokens = tokenize(line, configuration)
         print_tokens(tokens, sys.stdout, add_glue, args.debug)
+
+
+if __name__ == "__main__":
+    main()
 
